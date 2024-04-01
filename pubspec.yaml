@@ -79,6 +79,8 @@ flutter:
       - assets/images/academy.png
       - assets/images/scan.png
       - assets/images/qr.png
+      - assets/images/gpay.png
+      - assets/images/visa.png
 
 
 
