@@ -480,7 +480,7 @@ GestureDetector( // Wrap with GestureDetector for detecting taps
                 // Navigate to BuySellPage when tapped
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => home()),
+                  MaterialPageRoute(builder: (context) => Home()),
                 );
               },
   child: Text(
