@@ -1,3 +1,4 @@
+import 'package:financeapp/home.dart';
 import 'package:flutter/material.dart';
 
 class Send extends StatelessWidget {
@@ -11,7 +12,14 @@ class Send extends StatelessWidget {
         backgroundColor: Colors.black,
         leading: IconButton(
           icon: Image.asset('assets/images/Frame 7.png'),
-          onPressed: () {},
+           onPressed: () {
+              // Navigate to the homepage
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => Home(),
+                ),
+              );
+            },
         ),
         title: const Text(
           'Send',

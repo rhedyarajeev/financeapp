@@ -1,6 +1,7 @@
 import 'package:financeapp/academy.dart';
 
 import 'package:financeapp/buysell.dart';
+import 'package:financeapp/cioninfo.dart';
 
 import 'package:financeapp/recieve.dart';
 import 'package:financeapp/send.dart';
@@ -327,42 +328,51 @@ Row(
                                       Positioned(
                                         left: 306,
                                         top: 0,
-                                        child: Container(
-                                          width: 60,
-                                          height: 38,
-                                          child: const Stack(
-                                            children: [
-                                              Positioned(
-                                                left: -10,
-                                                top: 18,
-                                                child: Text(
-                                                  '\$4,179.12',
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(
-                                                    color: Color(0xFFF5F5F5),
-                                                    fontSize: 14,
-                                                    fontFamily: 'Poppins',
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 0.09,
+                                        child: GestureDetector( // Wrap with GestureDetector for detecting taps
+              onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CoininfoScreen()),
+                );
+              },
+                                          child: Container(
+                                            width: 60,
+                                            height: 38,
+                                            child: const Stack(
+                                              children: [
+                                                Positioned(
+                                                  left: -10,
+                                                  top: 18,
+                                                  child: Text(
+                                                    '\$4,179.12',
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                      color: Color(0xFFF5F5F5),
+                                                      fontSize: 14,
+                                                      fontFamily: 'Poppins',
+                                                      fontWeight: FontWeight.w500,
+                                                      height: 0.09,
+                                                    ),
                                                   ),
                                                 ),
-                                              ),
-                                              Positioned(
-                                                left: 4,
-                                                top: 32,
-                                                child: Text(
-                                                  '+15.1%',
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(
-                                                    color: Color(0xFFBFF5C7),
-                                                    fontSize: 14,
-                                                    fontFamily: 'Poppins',
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 0.09,
+                                                Positioned(
+                                                  left: 4,
+                                                  top: 32,
+                                                  child: Text(
+                                                    '+15.1%',
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                      color: Color(0xFFBFF5C7),
+                                                      fontSize: 14,
+                                                      fontFamily: 'Poppins',
+                                                      fontWeight: FontWeight.w500,
+                                                      height: 0.09,
+                                                    ),
                                                   ),
                                                 ),
-                                              ),
-                                            ],
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -456,42 +466,51 @@ Row(
                                       Positioned(
                                         left: 306,
                                         top: 0,
-                                        child: Container(
-                                          width: 60,
-                                          height: 38,
-                                          child: const Stack(
-                                            children: [
-                                              Positioned(
-                                                left: -10,
-                                                top: 18,
-                                                child: Text(
-                                                  '\$4,179.12', // Change to your coin value
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(
-                                                    color: Color(0xFFF5F5F5),
-                                                    fontSize: 14,
-                                                    fontFamily: 'Poppins',
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 0.09,
+                                        child: GestureDetector( // Wrap with GestureDetector for detecting taps
+              onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CoininfoScreen()),
+                );
+              },
+                                          child: Container(
+                                            width: 60,
+                                            height: 38,
+                                            child: const Stack(
+                                              children: [
+                                                Positioned(
+                                                  left: -10,
+                                                  top: 18,
+                                                  child: Text(
+                                                    '\$4,179.12', // Change to your coin value
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                      color: Color(0xFFF5F5F5),
+                                                      fontSize: 14,
+                                                      fontFamily: 'Poppins',
+                                                      fontWeight: FontWeight.w500,
+                                                      height: 0.09,
+                                                    ),
                                                   ),
                                                 ),
-                                              ),
-                                              Positioned(
-                                                left: 4,
-                                                top: 32,
-                                                child: Text(
-                                                  '+15.1%', // Change to your coin percentage
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(
-                                                    color: Color(0xFFBFF5C7),
-                                                    fontSize: 14,
-                                                    fontFamily: 'Poppins',
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 0.09,
+                                                Positioned(
+                                                  left: 4,
+                                                  top: 32,
+                                                  child: Text(
+                                                    '+15.1%', // Change to your coin percentage
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                      color: Color(0xFFBFF5C7),
+                                                      fontSize: 14,
+                                                      fontFamily: 'Poppins',
+                                                      fontWeight: FontWeight.w500,
+                                                      height: 0.09,
+                                                    ),
                                                   ),
                                                 ),
-                                              ),
-                                            ],
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -543,42 +562,51 @@ Row(
                                       Positioned(
                                         left: 60,
                                         top: 0,
-                                        child: Container(
-                                          width: 350,
-                                          height: 55,
-                                          child: const Stack(
-                                            children: [
-                                              Positioned(
-                                                left: 0,
-                                                top: 18,
-                                                child: Text(
-                                                  'Bitcoin', // Change to your coin name
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(
-                                                    color: Color(0xFFF5F5F5),
-                                                    fontSize: 16,
-                                                    fontFamily: 'Poppins',
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 0.10,
+                                        child: GestureDetector( // Wrap with GestureDetector for detecting taps
+              onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CoininfoScreen()),
+                );
+              },
+                                          child: Container(
+                                            width: 350,
+                                            height: 55,
+                                            child: const Stack(
+                                              children: [
+                                                Positioned(
+                                                  left: 0,
+                                                  top: 18,
+                                                  child: Text(
+                                                    'Bitcoin', // Change to your coin name
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                      color: Color(0xFFF5F5F5),
+                                                      fontSize: 16,
+                                                      fontFamily: 'Poppins',
+                                                      fontWeight: FontWeight.w500,
+                                                      height: 0.10,
+                                                    ),
                                                   ),
                                                 ),
-                                              ),
-                                              Positioned(
-                                                left: 0,
-                                                top: 35,
-                                                child: Text(
-                                                  '0.05101 BTC', // Change to your coin amount
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(
-                                                    color: Color(0xFFAAAAAA),
-                                                    fontSize: 14,
-                                                    fontFamily: 'Poppins',
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 0.09,
+                                                Positioned(
+                                                  left: 0,
+                                                  top: 35,
+                                                  child: Text(
+                                                    '0.05101 BTC', // Change to your coin amount
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                      color: Color(0xFFAAAAAA),
+                                                      fontSize: 14,
+                                                      fontFamily: 'Poppins',
+                                                      fontWeight: FontWeight.w500,
+                                                      height: 0.09,
+                                                    ),
                                                   ),
                                                 ),
-                                              ),
-                                            ],
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       ),

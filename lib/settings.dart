@@ -1,3 +1,4 @@
+import 'package:financeapp/academy.dart';
 import 'package:financeapp/coming_soon.dart';
 import 'package:flutter/material.dart';
 
@@ -622,14 +623,23 @@ class SettingsPage extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(height: 4),
-                              const Text(
-                                'Academy',
-                                style: TextStyle(
-                                  color: Color(0xFFAAAAAA),
-                                  fontSize: 12,
-                                  fontFamily: 'Inter',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0,
+                              GestureDetector( // Wrap with GestureDetector for detecting taps
+              onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AcademyScreen()),
+                );
+              },
+                                child: const Text(
+                                  'Academy',
+                                  style: TextStyle(
+                                    color: Color(0xFFAAAAAA),
+                                    fontSize: 12,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w400,
+                                    height: 0,
+                                  ),
                                 ),
                               ),
                             ],

@@ -1,3 +1,4 @@
+import 'package:financeapp/home.dart';
 import 'package:flutter/material.dart';
 class Swap extends StatelessWidget {
   const Swap({Key? key}) : super(key: key);
@@ -10,8 +11,13 @@ class Swap extends StatelessWidget {
         leading: IconButton(
           icon: Image.asset('assets/images/Frame 7.png'),
           onPressed: () {
-            // Add your onPressed action here
-          },
+              // Navigate to the homepage
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => Home(),
+                ),
+              );
+            },
         ),
         title: const Padding(
           padding: EdgeInsets.only(left: 100),

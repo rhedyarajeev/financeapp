@@ -2,6 +2,7 @@
 
 
 import 'package:financeapp/buysell.dart';
+import 'package:financeapp/cioninfo.dart';
 import 'package:financeapp/home.dart';
 import 'package:financeapp/recieve.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: Home()
+      home:Home()
     );
   }
 }

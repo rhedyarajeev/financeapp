@@ -1,3 +1,4 @@
+import 'package:financeapp/buysell.dart';
 import 'package:flutter/material.dart';
 // Import your BuySellPage file here
 class AcademyScreen extends StatelessWidget {
@@ -261,34 +262,43 @@ class AcademyScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 36),
-                Container(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration:const BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/s.png'),
-                            fit: BoxFit.fill,
+                GestureDetector( // Wrap with GestureDetector for detecting taps
+              onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BuySellPage()),
+                );
+              },
+                  child: Container(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 24,
+                          height: 24,
+                          decoration:const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/s.png'),
+                              fit: BoxFit.fill,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(height: 4),
-                      const Text(
-                        'Buy/Sell',
-                        style: TextStyle(
-                          color: Color(0xFFAAAAAA),
-                          fontSize: 12,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
+                        const SizedBox(height: 4),
+                        const Text(
+                          'Buy/Sell',
+                          style: TextStyle(
+                            color: Color(0xFFAAAAAA),
+                            fontSize: 12,
+                            fontFamily: 'Inter',
+                            fontWeight: FontWeight.w400,
+                            height: 0,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(width: 36),
